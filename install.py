@@ -12,7 +12,7 @@ forge_url = "https://files.minecraftforge.net/maven/net/minecraftforge/forge/{0}
 
 data = json.loads(open("manifest.json").read())
 pack_name = data["name"]
-pack_version = data["name"]
+pack_version = data["version"]
 out_name = "{}-{}".format(pack_name, pack_version)
 mc_version = data["minecraft"]["version"]
 overrides_dir = data["overrides"]
